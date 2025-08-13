@@ -2,16 +2,16 @@
 <testng-results ignored="3" total="4" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-13T02:42:17 IST" name="Default suite" finished-at="2025-08-13T02:42:19 IST" duration-ms="2013">
+  <suite started-at="2025-08-13T21:57:58 IST" name="Default suite" finished-at="2025-08-13T21:58:01 IST" duration-ms="2219">
     <groups>
     </groups>
-    <test started-at="2025-08-13T02:42:17 IST" name="Default test" finished-at="2025-08-13T02:42:19 IST" duration-ms="2013">
-      <class name="day2.DifferentWayToCreateBody">
-        <test-method signature="usingExternalJsonFile()[pri:0, instance:day2.DifferentWayToCreateBody@394a2528]" started-at="2025-08-13T02:42:17 IST" name="usingExternalJsonFile" finished-at="2025-08-13T02:42:19 IST" duration-ms="1971" status="PASS">
+    <test started-at="2025-08-13T21:57:58 IST" name="Default test" finished-at="2025-08-13T21:58:01 IST" duration-ms="2219">
+      <class name="day3.cookiesAndHeaders">
+        <test-method signature="logAllHeader()[pri:0, instance:day3.cookiesAndHeaders@11fc564b]" started-at="2025-08-13T21:57:58 IST" name="logAllHeader" finished-at="2025-08-13T21:58:01 IST" duration-ms="2185" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- usingExternalJsonFile -->
-      </class> <!-- day2.DifferentWayToCreateBody -->
+        </test-method> <!-- logAllHeader -->
+      </class> <!-- day3.cookiesAndHeaders -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
