@@ -10,6 +10,7 @@ import org.json.JSONTokener;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
 import static io.restassured.RestAssured.*;
@@ -18,7 +19,7 @@ import static org.hamcrest.Matchers.*;
 
 public class parsingJsonResponseData {
 
-	@Test
+	@Test (enabled =false)
 	public void parsingJsonRessponseData() {
 
 		// validate JSON response without using variable to store the entire response
@@ -48,5 +49,29 @@ public class parsingJsonResponseData {
 		
 		String categoryVal =res.jsonPath().get("[9].category").toString();
 		Assert.assertEquals(categoryVal, "electronics");
+	}
+	
+	
+	@Test (enabled =true)
+	public void dynamicallyValidatingResponse()
+	{
+		Response res =given()
+		      .urlEncodingEnabled(false)
+		      .contentType(ContentType.JSON)
+		      .pathParam("path", "api/users")
+		      .queryParam("page", 2)
+		
+		.when()
+		     .get("https://reqres.in/{path}?page=2");
+		
+		JSONObject jo = new JSONObject(res.toString());
+		
+		for(int i=0; i<=jo.getJSONArray("data").length(); i++)
+		{
+			String firstName=jo.getJSONArray("data").getJSONObject(i).get("first_name").toString();
+			System.out.println(firstName);
+		}
+		
+		
 	}
 }

@@ -5,7 +5,7 @@
     <classes>
       <class name="day4.parsingJsonResponseData">
         <methods>
-          <include name="parsingJsonRessponseData"/>
+          <include name="dynamicallyValidatingResponse"/>
         </methods>
       </class> <!-- day4.parsingJsonResponseData -->
     </classes>
