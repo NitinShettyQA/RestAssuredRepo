@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
+<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-18T21:09:51 IST" name="Default suite" finished-at="2025-08-18T21:09:53 IST" duration-ms="2326">
+  <suite started-at="2025-08-25T21:59:24 IST" name="Default suite" finished-at="2025-08-25T21:59:26 IST" duration-ms="2075">
     <groups>
     </groups>
-    <test started-at="2025-08-18T21:09:51 IST" name="Default test" finished-at="2025-08-18T21:09:53 IST" duration-ms="2326">
-      <class name="day5.XMLResponseValidation">
-        <test-method signature="usingXmlPath()[pri:0, instance:day5.XMLResponseValidation@76ed1b7c]" started-at="2025-08-18T21:09:51 IST" name="usingXmlPath" finished-at="2025-08-18T21:09:53 IST" duration-ms="2292" status="PASS">
+    <test started-at="2025-08-25T21:59:24 IST" name="Default test" finished-at="2025-08-25T21:59:26 IST" duration-ms="2075">
+      <class name="day7.SchemaValidation">
+        <test-method signature="xmlSchemaValidation()[pri:0, instance:day7.SchemaValidation@fa36558]" started-at="2025-08-25T21:59:24 IST" name="xmlSchemaValidation" finished-at="2025-08-25T21:59:26 IST" duration-ms="2022" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- usingXmlPath -->
-      </class> <!-- day5.XMLResponseValidation -->
+        </test-method> <!-- xmlSchemaValidation -->
+      </class> <!-- day7.SchemaValidation -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
